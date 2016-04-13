@@ -32,7 +32,7 @@ router.post('/contacto', function(req, res, next) {
         res.json({ code:1 ,error: true});
       }
       console.log('Message sent: ' + info.response);
-      res.json({code:0,error: false});
+      res.json({code:0,error: false ,message:"Mensaje enviado!"});
     });
 
 
