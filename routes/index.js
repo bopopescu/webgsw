@@ -14,12 +14,12 @@ router.post('/contacto', function(req, res, next) {
 
     var nodemailer = require('nodemailer');
 
-    var transporter = nodemailer.createTransport('smtps://olivagustavov%40gmail.com:wathsupman"@smtp.gmail.com');
+    var transporter = nodemailer.createTransport('smtps://hola%40gosmartware.com:wathsupman"@smtp.gmail.com');
 
 
     var mailOptions = {
-      from: 'olivagustavov@gmail.com',
-      to: 'goliva@gosmartware.com',
+      from: 'hola@gosmartware.com',
+      to: 'hola@gosmartware.com, goliva@gosmartware.com, mbarr@gosmartware.com, mario.briones@gosmartware.com, mherrera@gosmartware.com',
       subject: 'Nuevo Contacto',
       text: 'nombre : '+nombre +"\n email: "+email + "\n mensaje: "+mensaje, // plaintext body
       html: '' // html body
